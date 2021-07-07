@@ -2,7 +2,7 @@
   "name": "Accredible-website-APIs",
   "version": "1.0.0",
   "description": "Use the Accredible API via Node / Express",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
