@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Basic HTML5 Template</title>
+<!-- Bootstrap CSS -->
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- your content here... -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Accredible</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+      <a class="nav-link" href="/genpdf">Download Certificate</a>
+	  <a class="d-flex navbar-nav nav-link" href="/edit">Profile</a>
+        </div>
+      </div>
+        
+    </div>
+  </nav>
+  <h1 class="text-center"> Download certificates </h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Download certificates</h5>
+            <form class="form-signin" method="POST" action="/genpdf">
+              <div class="form-label-group">
+                <label for="inputid">Enter Your Credential Id</label>
+                <div class="form-text">Use coma (,) to enter multiple Credential Id.</div>
+                <textarea class="form-control" name="Credential" rows="3"></textarea>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3 my-4 text-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+              
+              <hr class="my-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
