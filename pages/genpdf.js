@@ -13,7 +13,7 @@ var options = {
 	'Content-Type': 'application/json',
     Authorization: `Token token=${config.key}`
   },
-  body: "{  \"credential_ids\": "+ids+"}"
+  body: "{  \"credential_ids\": [ "+ids+" ]}"
 };
 
 rp(options)
