@@ -20,7 +20,12 @@ request({
   console.log('Status:', response.statusCode);
   console.log('Headers:', JSON.stringify(response.headers));
   console.log('Response:', body);
-  res.render("success" , {msg: 'Your group has been created successfully'});
+  if(response.statusCode == 200){
+	  res.render("success" , {msg: 'Your group has been created successfully'});
+  }
+  else{
+	  res.render("error" , {msg: 'Something went wrong please try again'});
+  }
 });
 });
 router.route('/').get((req, res, next) => {
