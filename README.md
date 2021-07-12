@@ -5,7 +5,7 @@
 
 ## Tech Stack
 
-**Client:** ejs, Boostrap
+**Client:** ejs, Bootstrap
 
 **Server:** Node, Express
 
