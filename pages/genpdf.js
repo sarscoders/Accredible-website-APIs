@@ -27,7 +27,7 @@ rp(options)
   })
   .catch(err => {
     console.error(err);
-    res.send("Please Enter valid credential ids");
+    res.render("error" , {msg: 'Please Enter valid credential ids'});
   });
 });
 router.route('/').get((req, res, next) => {
