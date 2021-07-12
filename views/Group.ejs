@@ -1,0 +1,43 @@
+<%- include('Header'); -%>
+ <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center"> Create Group </h5>
+            <form class="form-signin" method="POST" >
+			<div class="form-label-group">
+				<label for="Inputname" class="form-label">Group Name</label>
+				<input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-label-group">
+				<label for="InputEmail1" class="form-label">course Name </label>
+				<input type="text" class="form-control" name="coursename" required>
+              </div>
+			 <div class="form-label-group">
+				<label for="Inputname" class="form-label">course Description</label>
+				<input type="text" class="form-control" name="coursedec" required>
+              </div>
+			  <div class="form-label-group">
+				<label for="Inputname" class="form-label">course Link</label>
+				<input type="text" class="form-control" name="course_link" required>
+              </div>
+			  <div class="form-label-group">
+				<label for="Inputname" class="form-label">design Id</label>
+				<input type="text" class="form-control" name="design_id" required>
+              </div>
+              <div class="custom-control custom-checkbox mb-3 my-4 text-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+              
+              <hr class="my-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
